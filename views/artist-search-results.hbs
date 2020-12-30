@@ -1,0 +1,16 @@
+<h1>Results</h1>
+<h3>You searched for "{{ searchQuery }}"</h3>
+
+<section class="results">
+  {{#each artists}}
+    <section class="single-artist">
+      <div class="single-artist-pic">
+        <img src="{{this.images.[0].url}}" alt="{{name}}">
+      </div>
+      <div class="single-result-information">
+        <h5>{{name}}</h5>
+        <button class= "albums-button">Albums</button>
+      </div>
+    </section>
+  {{/each}}
+</section>
